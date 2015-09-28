@@ -1,12 +1,12 @@
 { "categories":
   [
-    {"category_name": "cars and trucks"},
-    {"category_name": "antiques"},
-    {"category_name": "furniture"},
-    {"category_name": "free"},
-    {"category_name": "tickets"},
-    {"category_name": "books"},
-    {"category_name": "motorcycles"},
-    {"category_name": "tools"}
+    {"category_name": "cars and trucks", "posts": []},
+    {"category_name": "antiques", "posts": []},
+    {"category_name": "furniture", "posts": []},
+    {"category_name": "free", "posts": []},
+    {"category_name": "tickets", "posts": []},
+    {"category_name": "books", "posts": []},
+    {"category_name": "motorcycles", "posts": []},
+    {"category_name": "tools", "posts": []}
   ]
 }

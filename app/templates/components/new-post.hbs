@@ -1,0 +1,19 @@
+<form id="new-post" class='form-group'>
+
+  <label for="post-category">Select your posting's category:</label>
+  {{#each category as |category|}}
+  <a {{action 'setCategoryInput' category}} class="btn btn-xs">{{category.category_name}}</a>
+  {{/each}}
+  {{input value=post-category id=post-category class="form-control category-input"}}
+  <br><br>
+
+  <label for="post-name">Title of your post:</label>
+  {{input value=post-name id=post-name class="form-control"}}
+  <label for="post-body">Body of your post:</label>
+  {{input value=post-body id=post-body class="form-control"}}
+  <label for="post-image">Images:</label>
+  {{input value=post-image id=post-image class="form-control"}}
+  <br>
+  <button {{action 'addPost'}} class="btn">Submit</button>
+
+</form>
