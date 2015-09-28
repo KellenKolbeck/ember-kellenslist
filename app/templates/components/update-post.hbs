@@ -6,14 +6,19 @@
 </h3>
   {{format-date post.created_at}}
 <p>
-  {{#if updateForm}}<label for=post_body>Body</label>{{textarea value=post.post_body id=post_body class="form-control"}}{{else}}{{post.post_body}}{{/if}}
+  {{#if updateForm}}
+    <label for=post_body>Body</label>
+    {{textarea value=post.post_body id=post_body class="form-control"}}
+  {{else}}
+    {{{body-display post.post_body}}}
+  {{/if}}
 </p>
 
 {{#if updateForm}}
   <label for=post_images>Image URL</label>
   {{input value=post.post_images id=post_images class="form-control"}}
 {{else}}
-  <img src={{post.post_images}}>
+  <img src={{post.post_images}} class="img-responsive">
 {{/if}}<br>
 
 {{#if updateForm}}
