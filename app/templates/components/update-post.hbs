@@ -1,0 +1,16 @@
+<form>
+  {{format-date post.created_at}}
+<h3>{{#if updateForm}}
+  <label for=post_name>Title</label>
+  {{input value=post.post_name id=post_name class="form-control"}}{{else}}{{post.post_name}}{{/if}}
+</h3>
+<p>
+  {{#if updateForm}}<label for=post_body>Body</label>{{textarea value=post.post_body id=post_body class="form-control"}}{{else}}{{post.post_body}}{{/if}}
+</p>
+
+{{#if updateForm}}
+  <button {{action 'update' post}}>Submit Changes</button><button {{action 'delete' post}}>Delete Post</button>
+{{else}}
+  <button {{action 'showUpdateForm'}}>Update your post</button>
+{{/if}}
+</form>

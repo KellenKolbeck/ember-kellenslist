@@ -1,5 +1,3 @@
-<h2>{{model.post_name}}</h2> {{format-date model.created_at}}
 
-<p>
-  {{model.post_body}}
-</p>
+
+{{update-post post=model update="update" delete="delete"}}
