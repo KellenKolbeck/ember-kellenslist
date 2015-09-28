@@ -1,0 +1,12 @@
+{ "categories":
+  [
+    {"category_name": "cars and trucks"},
+    {"category_name": "antiques"},
+    {"category_name": "furniture"},
+    {"category_name": "free"},
+    {"category_name": "tickets"},
+    {"category_name": "books"},
+    {"category_name": "motorcycles"},
+    {"category_name": "tools"}
+  ]
+}
